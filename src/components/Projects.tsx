@@ -1,4 +1,3 @@
-import { pages } from "next/dist/build/templates/app-page";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
@@ -24,7 +23,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       rel="noopener noreferrer"
       className="group relative bg-white shadow-lg rounded-lg overflow-hidden p-6 w-full transform transition-transform duration-300 hover:scale-105 flex flex-col h-full"
     >
-      {/* Project Image */}
       {/* Project Image */}
       <div className="w-full h-48 overflow-hidden">
         <img
