@@ -15,12 +15,14 @@ const About: React.FC = () => {
 
       {/* About Me Description */}
       <p className="text-lg text-center max-w-3xl leading-relaxed mb-8 px-4 md:px-0">
-        Hi, I&#39;m Gean! As an aspiring Software Engineer and Game Developer, I
-        love tackling creative challenges and finding innovative solutions.
-        While I often work with Python and C++, I&#39;m always excited to
-        explore new technologies. My projects tend to come from the gaming
-        world, but I&#39;m open to applying my skills in any industry where
-        creativity and problem-solving are key.
+        Hi, I&#39;m Gean! I hold a Computer Science degree and as an aspiring
+        Software Engineer and Game Developer, I love tackling creative
+        challenges and finding innovative solutions. While I often work with
+        Python and C++, I&#39;m always excited to explore new technologies as
+        you can tell from my projects! My projects tend to come from the gaming
+        world as I find it easier to come up with fun and creative ideas in the
+        gaming space, but I&#39;m open to applying my skills in any industry
+        where creativity and problem-solving are key.
       </p>
 
       {/* Skills Icons */}
