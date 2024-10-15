@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
   title: string;
-  description: string;
+  description: string | JSX.Element; // Allow description to be a string or JSX
   imageUrl: string;
   technologies: string[];
   githubUrl: string;
