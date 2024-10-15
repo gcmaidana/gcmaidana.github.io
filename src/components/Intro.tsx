@@ -51,7 +51,7 @@ const Intro: React.FC = () => {
             style={{ fontSize: "clamp(2.5rem, 8vw, 5.9375rem)" }}
             className="font-normal"
           >
-            Hey, I'm Gean
+            Hey, I&#39;m Gean
           </h1>
           <h2
             style={{ fontSize: "clamp(1.5rem, 5vw, 3.125rem)" }}

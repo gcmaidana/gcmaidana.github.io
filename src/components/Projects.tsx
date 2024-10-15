@@ -1,7 +1,15 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
-const ProjectCard = ({
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  imageUrl: string;
+  technologies: string[];
+  githubUrl: string;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
   imageUrl,
@@ -53,7 +61,9 @@ const ProjectCard = ({
 
       {/* GitHub Icon (on hover) - No blur */}
       <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <FaGithub className="text-4xl text-black" />
+        <span className="text-4xl text-black">
+          <FaGithub />
+        </span>
       </div>
     </a>
   );

@@ -29,7 +29,9 @@ const Contact: React.FC = () => {
             href="mailto:geanmaidana@outlook.com"
             className="inline-flex items-center px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-all duration-300"
           >
-            <FaEnvelope className="mr-2 text-xl" />
+            <span className="mr-2 text-xl">
+              <FaEnvelope />
+            </span>
             Mail Me
           </a>
         </div>
@@ -42,7 +44,9 @@ const Contact: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300"
           >
-            <FaLinkedin className="mr-2 text-xl" />
+            <span className="mr-2 text-xl">
+              <FaLinkedin />
+            </span>
             Connect on LinkedIn
           </a>
         </div>

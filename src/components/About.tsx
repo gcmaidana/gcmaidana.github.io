@@ -15,22 +15,26 @@ const About: React.FC = () => {
 
       {/* About Me Description */}
       <p className="text-lg text-center max-w-3xl leading-relaxed mb-8 px-4 md:px-0">
-        Hi, I'm Gean! As an aspiring Software Engineer and Game Developer, I
+        Hi, I&#39;m Gean! As an aspiring Software Engineer and Game Developer, I
         love tackling creative challenges and finding innovative solutions.
-        While I often work with Python and C++, I'm always excited to explore
-        new technologies. My projects tend to come from the gaming world, but
-        I'm open to applying my skills in any industry where creativity and
-        problem-solving are key.
+        While I often work with Python and C++, I&#39;m always excited to
+        explore new technologies. My projects tend to come from the gaming
+        world, but I&#39;m open to applying my skills in any industry where
+        creativity and problem-solving are key.
       </p>
 
       {/* Skills Icons */}
       <div className="flex items-center justify-center mb-8 space-x-8">
         <div className="flex flex-col items-center text-center">
-          <FaCode className="text-4xl text-purple-400 mb-2" />
+          <span className="text-4xl text-purple-400 mb-2">
+            <FaCode />
+          </span>
           <p>Software Development</p>
         </div>
         <div className="flex flex-col items-center text-center">
-          <FaGamepad className="text-4xl text-green-400 mb-2" />
+          <span className="text-4xl text-green-400 mb-2">
+            <FaGamepad />
+          </span>
           <p>Game Development</p>
         </div>
       </div>
