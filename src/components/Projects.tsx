@@ -1,3 +1,4 @@
+import { pages } from "next/dist/build/templates/app-page";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 
@@ -71,6 +72,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
 const Projects: React.FC = () => {
   const projectList = [
+    {
+      title: "Personal Portfolio Website",
+      description: (
+        <>
+          This is my re-created portfolio website. My previous site was built
+          with HTML, CSS, and JavaScript. The old site had separate HTML files
+          for each page, making updates cumbersome. I decided to build this
+          single-page application using Next.js to enhance my web development
+          skills and streamline my workflow. Thank you to Jasmine for allowing
+          me to borrow aspects of her design for my previous page. Some of them
+          are still used on this site! Her website can be found at
+          <span className="font-bold text-blue-500">
+            {" "}
+            https://jasminehn.github.io/
+          </span>
+          . The intro page images on this site are free images from{" "}
+          <span className="font-bold text-blue-500"> pixabay.com</span>.
+        </>
+      ),
+      imageUrl:
+        "https://raw.githubusercontent.com/gcmaidana/gcmaidana.github.io/refs/heads/main/personal-website.jpg", // Replace with your actual image URLs
+      technologies: ["NextJS", "Tailwind CSS", "TypeScript"],
+      githubUrl: "https://github.com/gcmaidana/gcmaidana.github.io/",
+    },
     {
       title: "VisionWatch",
       description:

@@ -18,9 +18,9 @@ const Intro: React.FC = () => {
 
   useEffect(() => {
     const images = [
+      "/images/blue.jpg",
       "/images/lighthouse.jpg",
       "/images/tree.jpg",
-      "/images/tree2.jpg",
     ];
     const randomImage = images[Math.floor(Math.random() * images.length)];
     setBackgroundImage(randomImage);
