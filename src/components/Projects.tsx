@@ -108,25 +108,13 @@ const Projects: React.FC = () => {
       githubUrl: "https://github.com/gcmaidana/EscapeTheArena",
     },
     {
-      title: "Seminar Paper",
-      description:
-        "This is a paper from a seminar course during my undergrad. The course has students take a deep dive on a particular topic. My chosen topic was " +
-        "Natural Language Understanding/Translation. With how important AI has become since I finished my undergrad, I believe this paper aged well and " +
-        "it's insightful on how things like Apple's Siri and Google's Google Translate work on a deep level.",
-      imageUrl:
-        "https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png", // Replace with your actual image URLs
-      technologies: ["Microsoft Word"],
-      githubUrl:
-        "https://github.com/gcmaidana/Seminar-Paper/blob/main/maidanadollanartegean_seminarpaper_finalversion.pdf",
-    },
-    {
       title: "BAMSS",
       description:
         "Basketball Assistant with Metric Statistics and Scoreboard (BAMSS) is a program built during my Intermediate Software Engineering course.",
       imageUrl:
         "https://raw.githubusercontent.com/gcmaidana/BAMSS/refs/heads/main/premium.png", // Replace with your actual image URLs
       technologies: ["C++", "MySQL", ".NET Framework"],
-      githubUrl: "https://github.com/your-repo-5",
+      githubUrl: "https://github.com/gcmaidana/BAMSS",
     },
     {
       title: "Tetris",
@@ -135,7 +123,7 @@ const Projects: React.FC = () => {
       imageUrl:
         "https://raw.githubusercontent.com/gcmaidana/Tetris/refs/heads/main/d480be9617a7c815e2cf51df0c04ee21.png", // Replace with your actual image URLs
       technologies: ["Java", "JavaFX"],
-      githubUrl: "https://github.com/gcmaidana/BAMSS",
+      githubUrl: "https://github.com/gcmaidana/tetris",
     },
     {
       title: "Twilight",
@@ -145,6 +133,17 @@ const Projects: React.FC = () => {
         "https://raw.githubusercontent.com/gcmaidana/twilight-game/refs/heads/master/2b1b185858d7cd6a89a3cb0b5c1cbcbd.png", // Replace with your actual image URLs
       technologies: ["Java", "LibGDX"],
       githubUrl: "https://github.com/gcmaidana/twilight-game",
+    },
+    {
+      title: "Seminar Paper",
+      description:
+        "This paper was written for a seminar course during my undergraduate studies, where students explored specific topics in depth. I chose to focus on Natural Language Understanding and Translation. Although it’s not a programming project, this paper offers valuable insights into the workings of AI systems like Apple's Siri and Google Translate on a fundamental level. Given the increasing relevance of AI in today's world, I still appreciate this paper for its comprehensive look at how these systems operate, both in software and hardware contexts.",
+
+      imageUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/d/db/Google_Translate_Icon.png", // Replace with your actual image URLs
+      technologies: ["Microsoft Word"],
+      githubUrl:
+        "https://github.com/gcmaidana/Seminar-Paper/blob/main/maidanadollanartegean_seminarpaper_finalversion.pdf",
     },
   ];
 

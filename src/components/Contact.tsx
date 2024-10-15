@@ -32,14 +32,14 @@ const Contact: React.FC = () => {
             <span className="mr-2 text-xl">
               <FaEnvelope />
             </span>
-            Mail Me
+            E-mail Me
           </a>
         </div>
 
         {/* LinkedIn Button */}
         <div>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://linkedin.com/in/gean-maidana"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-all duration-300"
