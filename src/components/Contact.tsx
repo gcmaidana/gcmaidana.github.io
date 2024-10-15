@@ -19,8 +19,8 @@ const Contact: React.FC = () => {
 
         {/* Brief message */}
         <p className="text-lg text-gray-700 mb-6">
-          Feel free to reach out about job opportunities, collaborations, or ask
-          any questions!
+          Feel free to reach out about job opportunities or to ask any
+          questions!
         </p>
 
         {/* Email Button */}
