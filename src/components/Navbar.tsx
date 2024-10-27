@@ -16,8 +16,8 @@ const Navbar: React.FC = () => {
         });
       },
       {
-        threshold: 0.2, // Detect sections earlier (20% visibility)
-        rootMargin: "-10% 0px -20% 0px", // Adjust root margin for earlier and longer detection
+        threshold: 0.1, // Lower to 0.1 to make it more sensitive
+        rootMargin: "0px 0px -25% 0px", // Ensure more visibility for 'projects'
       }
     );
 

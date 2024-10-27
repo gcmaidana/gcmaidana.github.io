@@ -173,7 +173,7 @@ const Projects: React.FC = () => {
   return (
     <section
       id="projects"
-      className="py-24 text-gray-100"
+      className="py-24 text-gray-100 scroll-mt-20"
       style={{
         backgroundColor: "#000000",
         minHeight: "100vh", // Full viewport height
