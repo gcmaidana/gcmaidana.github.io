@@ -71,6 +71,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 const Projects: React.FC = () => {
   const projectList = [
     {
+      title: "Grind 75 Problem Randomizer",
+      description: (
+        <>
+          A site that randomly selects a problem from the Grind75 list. Useful
+          for testing preparedness for tough interviews. Hosted at
+          <span className="font-bold text-blue-500">
+            {" "}
+            http://grind75-randomizer.geanmaidana.com/
+          </span>
+          .
+        </>
+      ),
+      imageUrl:
+        "https://raw.githubusercontent.com/gcmaidana/grind75-randomizer/refs/heads/master/g75.png",
+      technologies: ["NextJS", "Tailwind CSS", "TypeScript"],
+      githubUrl: "https://github.com/gcmaidana/grind75-randomizer/",
+    },
+    {
       title: "Personal Portfolio Website",
       description: (
         <>
