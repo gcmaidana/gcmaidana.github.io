@@ -15,9 +15,6 @@ export default function BlogPage() {
     return { slug, ...data };
   });
 
-  // Sort posts from newest to oldest
-  posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-
   return (
     <>
       <Navbar />
@@ -37,15 +34,7 @@ export default function BlogPage() {
             {posts.map((post) => (
               <li key={post.slug}>
                 <Link href={`/blog/${post.slug}`}>
-                  <div className="hover:underline cursor-pointer">
-                    <h2 className="text-2xl font-semibold text-purple-400">
-                      {post.title}
-                    </h2>
-                    <p className="text-gray-400 text-sm mb-1">
-                      {new Date(post.date).toLocaleDateString()}
-                    </p>
-                    <p className="text-gray-300">{post.description}</p>
-                  </div>
+                  <div className="hover:underline cursor-pointer"></div>
                 </Link>
               </li>
             ))}
