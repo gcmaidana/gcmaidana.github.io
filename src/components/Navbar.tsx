@@ -1,7 +1,12 @@
+"use client";
 import React, { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState("intro");
+
+  const pathname = usePathname();
+  const isBlog = pathname.startsWith("/blog");
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -33,7 +38,7 @@ const Navbar: React.FC = () => {
       <ul className="flex justify-center space-x-6">
         <li>
           <a
-            href="#intro"
+            href="/#intro"
             className={`${
               activeSection === "intro" ? "text-white" : "text-gray-400"
             } relative px-3 py-1 transition-colors duration-300 hover:text-orange-500`}
@@ -48,7 +53,7 @@ const Navbar: React.FC = () => {
         </li>
         <li>
           <a
-            href="#about"
+            href="/#about"
             className={`${
               activeSection === "about" ? "text-white" : "text-gray-400"
             } relative px-3 py-1 transition-colors duration-300 hover:text-orange-500`}
@@ -63,7 +68,7 @@ const Navbar: React.FC = () => {
         </li>
         <li>
           <a
-            href="#projects"
+            href="/#projects"
             className={`${
               activeSection === "projects" ? "text-white" : "text-gray-400"
             } relative px-3 py-1 transition-colors duration-300 hover:text-orange-500`}
@@ -76,9 +81,10 @@ const Navbar: React.FC = () => {
             ></span>
           </a>
         </li>
+
         <li>
           <a
-            href="#contact"
+            href="/#contact"
             className={`${
               activeSection === "contact" ? "text-white" : "text-gray-400"
             } relative px-3 py-1 transition-colors duration-300 hover:text-orange-500`}
@@ -87,6 +93,21 @@ const Navbar: React.FC = () => {
             <span
               className={`absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-orange-500 to-purple-500 transition-transform duration-300 ${
                 activeSection === "contact" ? "scale-x-100" : "scale-x-0"
+              }`}
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="/blog"
+            className={`${
+              isBlog ? "text-white" : "text-gray-400"
+            } relative px-3 py-1 transition-colors duration-300 hover:text-orange-500`}
+          >
+            Blog
+            <span
+              className={`absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-orange-500 to-purple-500 transition-transform duration-300 ${
+                isBlog ? "scale-x-100" : "scale-x-0"
               }`}
             ></span>
           </a>
