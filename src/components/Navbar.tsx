@@ -97,21 +97,6 @@ const Navbar: React.FC = () => {
             ></span>
           </a>
         </li>
-        <li>
-          <a
-            href="/blog"
-            className={`${
-              isBlog ? "text-white" : "text-gray-400"
-            } relative px-3 py-1 transition-colors duration-300 hover:text-orange-500`}
-          >
-            Blog
-            <span
-              className={`absolute left-0 bottom-0 w-full h-[2px] bg-gradient-to-r from-orange-500 to-purple-500 transition-transform duration-300 ${
-                isBlog ? "scale-x-100" : "scale-x-0"
-              }`}
-            ></span>
-          </a>
-        </li>
       </ul>
     </nav>
   );
