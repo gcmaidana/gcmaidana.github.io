@@ -1,12 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState("intro");
-
-  const pathname = usePathname();
-  const isBlog = pathname.startsWith("/blog");
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");

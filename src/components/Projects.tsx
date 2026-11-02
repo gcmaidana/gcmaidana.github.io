@@ -47,10 +47,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         {technologies.map((tech, index) => (
           <span
             key={index}
-            className="px-3 py-1 bg-black text-white border border-neon-purple rounded-full shadow-sm"
+            className="px-3 py-1 text-white text-sm font-medium border-[3px] border-transparent rounded-full shadow-sm"
             style={{
-              borderColor: "#9b00ff", // Neon purple outline
-              color: "#fff", // White text
+              background:
+                "linear-gradient(#000, #000) padding-box, linear-gradient(120deg, #f97316, #ec4899, #a855f7, #3b82f6, #22d3ee) border-box",
             }}
           >
             {tech}
@@ -71,6 +71,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 const Projects: React.FC = () => {
   const projectList = [
     {
+      title: "Folio",
+      description:
+        "A stock analysis dashboard with interactive price charts, moving averages, technical indicators, and stock and S&P 500 performance comparisons. Includes company search, a browser-local watchlist, and CSV exports. Built through AI-assisted development, with my direction on features, review, debugging, and visual iteration.",
+      imageUrl: "/images/projects/folio.png",
+      technologies: ["React", "TypeScript", "Vite", "Recharts", "Cloudflare Workers"],
+      githubUrl: "https://github.com/gcmaidana/folio",
+    },
+    {
+      title: "Wolfenstein 3D ASCII",
+      description:
+        "A C++ port of the Wolfenstein 3D engine that renders gameplay as colored ASCII characters. Built on Wolf4SDL, it preserves the original maps, enemies, audio, and menus, with Windows and WebAssembly builds and a playable shareware episode in the browser.",
+      imageUrl: "/images/projects/wolfenstein-ascii.png",
+      technologies: ["C++", "SDL2", "WebAssembly", "Emscripten"],
+      githubUrl: "https://github.com/gcmaidana/Wolfenstein3D-ASCII",
+    },
+    {
       title: "Grind 75 Problem Randomizer",
       description: (
         <>
@@ -87,30 +103,6 @@ const Projects: React.FC = () => {
         "https://raw.githubusercontent.com/gcmaidana/grind75-randomizer/refs/heads/master/g75.png",
       technologies: ["NextJS", "Tailwind CSS", "TypeScript"],
       githubUrl: "https://github.com/gcmaidana/grind75-randomizer/",
-    },
-    {
-      title: "Personal Portfolio Website",
-      description: (
-        <>
-          This is my re-created portfolio website. My previous site was built
-          with HTML, CSS, and JavaScript. The old site had separate HTML files
-          for each page, making updates cumbersome. I decided to build this
-          single-page application using Next.js to enhance my web development
-          skills and streamline my workflow. Thank you to Jasmine for allowing
-          me to borrow aspects of her design for my previous page. Some of them
-          are still used on this site! Her website can be found at
-          <span className="font-bold text-blue-500">
-            {" "}
-            https://jasminehn.github.io/
-          </span>
-          . The intro page images on this site are free images from{" "}
-          <span className="font-bold text-blue-500"> pixabay.com</span>.
-        </>
-      ),
-      imageUrl:
-        "https://raw.githubusercontent.com/gcmaidana/gcmaidana.github.io/refs/heads/main/personal-website.jpg", // Replace with your actual image URLs
-      technologies: ["NextJS", "Tailwind CSS", "TypeScript"],
-      githubUrl: "https://github.com/gcmaidana/gcmaidana.github.io/",
     },
     {
       title: "VisionWatch",
@@ -138,15 +130,6 @@ const Projects: React.FC = () => {
         "https://raw.githubusercontent.com/gcmaidana/TikTok-Auto-Scroller/refs/heads/main/tiktokSS.jpg", // Replace with your actual image URLs
       technologies: ["JavaScript"],
       githubUrl: "https://github.com/gcmaidana/TikTok-Auto-Scroller",
-    },
-    {
-      title: "Escape The Arena",
-      description:
-        "Escape The Arena is a simple horror game I created in Unreal Engine 5 to better understand the engine.",
-      imageUrl:
-        "https://raw.githubusercontent.com/gcmaidana/EscapeTheArena/refs/heads/main/img/enemy.png", // Replace with your actual image URLs
-      technologies: ["Unreal Engine 5"],
-      githubUrl: "https://github.com/gcmaidana/EscapeTheArena",
     },
     {
       title: "BAMSS",
